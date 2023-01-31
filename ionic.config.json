@@ -1,0 +1,7 @@
+{
+  "name": "my-sf-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
