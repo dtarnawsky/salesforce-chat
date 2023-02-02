@@ -8,8 +8,10 @@ The sample shows:
 
 ## Reviewing the sample
 The sample app does the following:
-1. Sets the [ChatConfiguration](https://github.com/dtarnawsky/salesforce-chat/blob/ba4a5e899be71cac52864417ba2fba19c39c6745/src/app/tab1/tab1.page.ts#L14) is created from values from the Salesforce configuration for [Chat Buttons](#chat-button-configuration) and [Deployments](#deployment-configuration).
-2. Defines a [button](https://github.com/dtarnawsky/salesforce-chat/blob/5a2cb2e40acc99e7ea1b31999dcc1484dfe5c0cb/src/app/tab1/tab1.page.html#L15) when the chat is online.
+1. Sets the [ChatConfiguration](https://github.com/dtarnawsky/salesforce-chat/blob/ba4a5e899be71cac52864417ba2fba19c39c6745/src/app/tab1/tab1.page.ts#L14) is created from values from the Salesforce configuration for [Chat Buttons](#chat-button-configuration) and [Deployments](#deployment-configuration)
+2. Defines a [button](https://github.com/dtarnawsky/salesforce-chat/blob/5a2cb2e40acc99e7ea1b31999dcc1484dfe5c0cb/src/app/tab1/tab1.page.html#L15) when the chat is online
+3. Defines a [button](https://github.com/dtarnawsky/salesforce-chat/blob/eeeed61a95e330a7460f2a796e4be0625ff520e1/src/app/tab1/tab1.page.html#L18) when the chat is offline
+4. Defines a [iframe]() where the Chat UI will be displayed
 
 
 # Integrating into your app
