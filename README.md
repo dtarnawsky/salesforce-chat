@@ -6,6 +6,10 @@ The sample shows:
 - How to indicate whether an agent is online to chat
 - Displaying the chat in an `ion-modal`
 
+## Video
+
+https://user-images.githubusercontent.com/84595830/216224242-dcb00367-c91f-4ad2-9428-a2b3e1cbb1c1.mp4
+
 ## Reviewing the sample
 The sample app does the following:
 1. Sets the [ChatConfiguration](https://github.com/dtarnawsky/salesforce-chat/blob/ba4a5e899be71cac52864417ba2fba19c39c6745/src/app/tab1/tab1.page.ts#L14) is created from values from the Salesforce configuration for [Chat Buttons](#chat-button-configuration) and [Deployments](#deployment-configuration)
@@ -14,12 +18,6 @@ The sample app does the following:
 4. Defines a [iframe](https://github.com/dtarnawsky/salesforce-chat/blob/f252f62b41743e7fa9f74f5d58b16a1a18a0cbd2/src/app/tab1/tab1.page.html#L35) where the Chat UI will be displayed
 5. Calls [initChat](https://github.com/dtarnawsky/salesforce-chat/blob/147820c25faa9b57e1cad0a7749096738a9969b3/src/app/tab1/tab1.page.ts#L29) to wire up the chat button to show and hide when agents are online or offline
 6. Calls [startChat](https://github.com/dtarnawsky/salesforce-chat/blob/bf23517f7fcec99e32d0b1a589f12f31c6d07387/src/app/tab1/tab1.page.ts#L33) to start a chat session with an agent
-
-## Video
-
-https://user-images.githubusercontent.com/84595830/216224242-dcb00367-c91f-4ad2-9428-a2b3e1cbb1c1.mp4
-
-
 
 ## Integrating into your app
 - Copy the file [salesforce-chat.ts](src/app/salesforce-chat.ts) into your own project.
