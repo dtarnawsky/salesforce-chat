@@ -12,13 +12,16 @@ export class Tab1Page implements OnInit {
   presentingElement: any;
 
   private config: ChatConfiguration = {
+    // Salesforce Chat Configurations
     buttonId: '573Dn000000czBv',
     deploymentId: '572Dn000000czEE',
     organizationId: '00DDn00000ACnPz',
-    onlineId: 'online',
-    offlineId: 'offline',
     deploymentUrl: 'https://c.la1-c1-ia7.salesforceliveagent.com/content/g/js/56.0/deployment.js',
     apiEndpointUrl: 'https://d.la1-c1-ia7.salesforceliveagent.com/chat',
+
+    // Ids of elements in your UI
+    onlineId: 'online',
+    offlineId: 'offline',
     chatWindowName: 'chat'
   };
 
