@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <ion-modal #modal trigger="open-modal" (didPresent)="startChat()" [presentingElement]="presentingElement">
+  <ion-modal #modal trigger="open-modal" (didPresent)="opened()" [presentingElement]="presentingElement">
     <ng-template>
       <ion-header>
         <ion-toolbar>
