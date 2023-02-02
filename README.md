@@ -13,7 +13,7 @@ The sample app does the following:
 3. Defines a [button](https://github.com/dtarnawsky/salesforce-chat/blob/eeeed61a95e330a7460f2a796e4be0625ff520e1/src/app/tab1/tab1.page.html#L18) when the chat is offline
 4. Defines a [iframe](https://github.com/dtarnawsky/salesforce-chat/blob/f252f62b41743e7fa9f74f5d58b16a1a18a0cbd2/src/app/tab1/tab1.page.html#L35) where the Chat UI will be displayed
 5. Calls [initChat](https://github.com/dtarnawsky/salesforce-chat/blob/147820c25faa9b57e1cad0a7749096738a9969b3/src/app/tab1/tab1.page.ts#L29) to wire up the chat button to show and hide when agents are online or offline
-6. Calls [startChat](#startchat) to start a chat session with an agent
+6. Calls [startChat](https://github.com/dtarnawsky/salesforce-chat/blob/bf23517f7fcec99e32d0b1a589f12f31c6d07387/src/app/tab1/tab1.page.ts#L33) to start a chat session with an agent
 
 
 # Integrating into your app
