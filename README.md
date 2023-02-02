@@ -6,6 +6,12 @@ The sample shows:
 - How to indicate whether an agent is online to chat
 - Displaying the chat in an `ion-modal`
 
+## Reviewing the sample
+The sample app does the following:
+1. Sets the [ChatConfiguration](https://github.com/dtarnawsky/salesforce-chat/blob/ba4a5e899be71cac52864417ba2fba19c39c6745/src/app/tab1/tab1.page.ts#L14) is created from values from the Salesforce configuration for [Chat Buttons](#chat-button-configuration) and [Deployments](#deployment-configuration).
+2. 
+
+
 # Integrating into your app
 - Copy the file [salesforce-chat.ts](src/app/salesforce-chat.ts) into your own project.
 - Specify a [Chat Configuration](#chat-configuration) (eg `config`)
