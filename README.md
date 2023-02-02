@@ -109,5 +109,7 @@ Additional Javascript options can be found in the [Salesforce Chat Documentation
 
 ## Troubleshooting
 
-> You cannot call liveagent.startChat until the asynchronous call to liveagent.init has completed!
-- If the domain name of your application (ie `capacitor://localhost`, `http://localhost`) is not whitelisted you will get this error.
+
+**Error**: `You cannot call liveagent.startChat until the asynchronous call to liveagent.init has completed!`
+
+If the domain name of your application (ie `capacitor://localhost`, `http://localhost`) is not whitelisted you will get this error.
