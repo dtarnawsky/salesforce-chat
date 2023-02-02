@@ -16,7 +16,7 @@ The sample app does the following:
 6. Calls [startChat](https://github.com/dtarnawsky/salesforce-chat/blob/bf23517f7fcec99e32d0b1a589f12f31c6d07387/src/app/tab1/tab1.page.ts#L33) to start a chat session with an agent
 
 
-# Integrating into your app
+## Integrating into your app
 - Copy the file [salesforce-chat.ts](src/app/salesforce-chat.ts) into your own project.
 - Specify a [Chat Configuration](#chat-configuration) (eg `config`)
 - Call `initChat(config)` to load Salesforce Chat and initialize the button used to launch chat
@@ -24,7 +24,7 @@ The sample app does the following:
 
 
 ## Chat Configuration
-The following is a sample configuration
+The following is a sample configuration. You will need to replace the values with those from your Salesforce instance and your UI.
 ```js
   private config: ChatConfiguration = {
     // Salesforce Chat Configurations
@@ -58,11 +58,11 @@ The following is a sample configuration
 
 ![salesforce-config](https://user-images.githubusercontent.com/84595830/216217613-148a8a2d-76a7-4417-8305-eaaf8b2605fd.png)
 
-# UI Configuration
+## UI Configuration
 
 Your UI needs to have the following elements for the online button, offline button and the window name for the chat:
 
-## onlineId
+### onlineId
 This is the `id` of the DOM element used for a button which is displayed when chat agents are online.
 
 In the below example the `onlineId` would be `online` as it is the `id` of the `div`. Note: that we also set an inline style because the Salesforce chat SDK requires it.
@@ -73,7 +73,7 @@ In the below example the `onlineId` would be `online` as it is the `id` of the `
     </div>
 ```
 
-## offlineId
+### offlineId
 This is the `id` of the DOM element used for a button which is displayed when there are no chat agents online.
 
 In the below example the `offlineId` would be `offline` as it is the `id` of the `div`. Note: that we also set an inline style because the Salesforce chat SDK requires it.
@@ -84,7 +84,7 @@ In the below example the `offlineId` would be `offline` as it is the `id` of the
     </div>
 ```
 
-## chatWindowName
+### chatWindowName
 This is the `name` of the `iframe` used to contain the chat user interface.
 
 In the below example the `chatWindowName` would be `chat` as it is the `name` of the `iframe`.
@@ -92,7 +92,7 @@ In the below example the `chatWindowName` would be `chat` as it is the `name` of
 <iframe name="chat"></iframe>
 ```
 
-# initChat
+## initChat
 
 Call `initChat(config)` on the page where you have your button to launch chat. This will ensure that the Salesforce SDK shows and hides the online/offline buttons.
 
@@ -100,13 +100,13 @@ Call `initChat(config)` on the page where you have your button to launch chat. T
 initChat(this.config);
 ```
 
-# startChat
+## startChat
 Call `startChat(config)` when the user clicks the button to begin a chat session. This will show the chat UI in the iframe named by `chatWindowName`.
 
-# Salesforce Docs
+## Salesforce Docs
 Additional Javascript options can be found in the [Salesforce Chat Documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_dev.meta/live_agent_dev/live_agent_launching_chat_request_API_startChatWithWindow.htm).
 
-# Troubleshooting
+## Troubleshooting
 
 > You cannot call liveagent.startChat until the asynchronous call to liveagent.init has completed!
 - If the domain name of your application (ie `capacitor://localhost`, `http://localhost`) is not whitelisted you will get this error.
