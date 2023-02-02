@@ -1,0 +1,16 @@
+.center {
+  text-align: center;
+  position: absolute;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  left: 0;
+  right: 0;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.chat-iframe {
+  border: none;
+  width: 100%;
+  height: calc(100% - 30px)
+}

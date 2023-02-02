@@ -1,17 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons>
+
+    </ion-buttons>
     <ion-title>
-      Tab 1
+      Home
     </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="center">    
+    <div style="display:none" id="online">
+      <ion-button shape="round" id="open-modal">Chat With Us</ion-button>
+    </div>
+    <div style="display:none" id="offline">
+      <ion-button [disabled]="true" shape="round">No Agents Available</ion-button>
+    </div>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-modal #modal trigger="open-modal" (didPresent)="startChat()" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Support</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="modal.dismiss()">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <p class="center">{{message}}</p>
+        <iframe class="chat-iframe" name="chat"></iframe>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>
