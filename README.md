@@ -1,12 +1,10 @@
 # Salesforce Chat with Capacitor
 
-This sample application shows how to integrate Salesforce Chat (web) into a Capacitor application.
+This sample application shows how to integrate Salesforce Chat (web) into a Capacitor application. It only loads the Salesforce Chat JS SDK on demand, it works on Web, iOS and Android.
 
 The sample shows:
 - How to indicate whether an agent is online to chat
 - Displaying the chat in an `ion-modal`
-
-## Video
 
 https://user-images.githubusercontent.com/84595830/216224242-dcb00367-c91f-4ad2-9428-a2b3e1cbb1c1.mp4
 
