@@ -15,6 +15,11 @@ The sample app does the following:
 5. Calls [initChat](https://github.com/dtarnawsky/salesforce-chat/blob/147820c25faa9b57e1cad0a7749096738a9969b3/src/app/tab1/tab1.page.ts#L29) to wire up the chat button to show and hide when agents are online or offline
 6. Calls [startChat](https://github.com/dtarnawsky/salesforce-chat/blob/bf23517f7fcec99e32d0b1a589f12f31c6d07387/src/app/tab1/tab1.page.ts#L33) to start a chat session with an agent
 
+## Video
+
+https://user-images.githubusercontent.com/84595830/216224242-dcb00367-c91f-4ad2-9428-a2b3e1cbb1c1.mp4
+
+
 
 ## Integrating into your app
 - Copy the file [salesforce-chat.ts](src/app/salesforce-chat.ts) into your own project.
